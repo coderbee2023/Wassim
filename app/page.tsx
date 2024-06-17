@@ -6,7 +6,7 @@ export default function Home() {
       <section className="flex flex-1 flex-row justify-center items-center ">
         <div className="flex flex-col gap-4">
           <div className="text-blue-600 text-3xl font-medium">HELLO!</div>
-          <div className="text-blue-600 text-6xl font-bold"> <span className=" text-white">I'm</span> Wassim <br />Djobbi</div>
+          <div className="text-blue-600 text-6xl font-bold"> <span className=" text-white">Im</span> Wassim <br />Djobbi</div>
           <div className="text-4xl font-medium">Web Developer</div>
           <div className="flex flex-row gap-2">
             <button className="bg-blue-600 text-black p-3 rounded-3xl font-bold hover:text-blue-600 hover:bg-black hover:border-blue-600 hover:border-2">Work with me</button>
