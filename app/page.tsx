@@ -2,112 +2,136 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="flex min-h-screen flex-col justify-center items-center p-4">
+      <section className="flex flex-1 flex-row justify-center items-center ">
+        <div className="flex flex-col gap-4">
+          <div className="text-blue-600 text-3xl font-medium">HELLO!</div>
+          <div className="text-blue-600 text-6xl font-bold"> <span className=" text-white">I'm</span> Wassim <br />Djobbi</div>
+          <div className="text-4xl font-medium">Web Developer</div>
+          <div className="flex flex-row gap-2">
+            <button className="bg-blue-600 text-black p-3 rounded-3xl font-bold hover:text-blue-600 hover:bg-black hover:border-blue-600 hover:border-2">Work with me</button>
+            <button className="bg-white rounded-3xl font-bold text-black p-3 px-5 border-2 border-black hover:text-white hover:bg-black hover:border-white">My Work</button>
+          </div>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <div className="bg-black">
+        <Image src="/mychar2.png" width={500} height={500} alt="Next.js logo" />
+        </div>
+      </section>
+      <section className="flex flex-row justify-center items-center">
+        <div><Image src="/mychar2.png" width={500} height={500} alt="Next.js logo"/></div>
+        <div className="flex flex-col gap-4">
+          <div className="text-white font-bold text-4xl">About Me</div>
+          <div>A small river named Duden flows by their place and supplies it with the necessary regelialia.</div>
+          <div className="text-white"><strong>Name:</strong> Djobbi Wassim</div>
+          <div><strong>Birth Date: </strong>2003/06/21</div>
+          <div><strong>Adress: </strong>Tunis,Ariana,Tadhamen 18 January</div>
+          <div><strong>Email: </strong>Djobbiwassim5@gmail.com</div>
+          <div><strong>Phone: +214 56 566 889</strong></div>
+          <div></div>
+        </div>
+      </section>
+      <section className="flex flex-col justify-center items-center gap-7">
+        <div className="text-5xl font-bold">TechStack</div>
+        <div className=" text-gray-400">this is My stack</div>
+        <div className="inline-grid grid-cols-4 gap-8">
+          <div className="flex flex-col justify-center items-center bg-zinc-900 w-32 h-32 gap-4 cursor-pointer rounded-lg border-blue-600 hover:border-2">
+            <Image src="/react.png" width={50} height={50} alt="WebDesign"/>
+            <div>ReactJs</div>
+          </div>
+          <div className="flex flex-col justify-center items-center bg-zinc-900 w-32 h-32 gap-4 cursor-pointer rounded-lg border-blue-600 hover:border-2">
+            <Image src="/express.png" width={50} height={50} alt="WebDesign"/>
+            <div>ExpressJs</div>
+          </div>
+          <div className="flex flex-col justify-center items-center bg-zinc-900 w-32 h-32 gap-4 cursor-pointer rounded-lg border-blue-600 hover:border-2">
+            <Image src="/next.png" width={50} height={100} alt="WebDesign"/>
+            <div>NextJs</div>
+          </div>
+          <div className="flex flex-col justify-center items-center bg-zinc-900 w-32 h-32 gap-4 cursor-pointer rounded-lg border-blue-600 hover:border-2">
+            <Image src="/mongodb.png" width={50} height={50} alt="WebDesign"/>
+            <div>MongoDb</div>
+          </div>
+          <div className="flex flex-col justify-center items-center bg-zinc-900 w-32 h-32 gap-4 cursor-pointer rounded-lg border-blue-600 hover:border-2">
+            <Image src="/node.png" width={50} height={50} alt="WebDesign"/>
+            <div>Node</div>
+          </div>
+          <div className="flex flex-col justify-center items-center bg-zinc-900 w-32 h-32 gap-4 cursor-pointer rounded-lg border-blue-600 hover:border-2">
+            <Image src="/tailwind.png" width={50} height={50} alt="WebDesign"/>
+            <div>Tailwind</div>
+          </div>
+          <div className="flex flex-col justify-center items-center bg-zinc-900 w-32 h-32 gap-4 cursor-pointer rounded-lg border-blue-600 hover:border-2">
+            <Image src="/bootstrap.png" width={50} height={50} alt="WebDesign"/>
+            <div>Bootstrap</div>
+          </div>
+          <div className="flex flex-col justify-center items-center bg-zinc-900 w-32 h-32 gap-4 cursor-pointer rounded-lg border-blue-600 hover:border-2">
+            <Image src="/git.png" width={50} height={50} alt="WebDesign"/>
+            <div>Git</div>
+          </div>
+          <div className="flex flex-col justify-center items-center bg-zinc-900 w-32 h-32 gap-4 cursor-pointer rounded-lg border-blue-600 hover:border-2">
+            <Image src="/github.png" width={50} height={50} alt="WebDesign"/>
+            <div>GitHub</div>
+          </div>
+          <div className="flex flex-col justify-center items-center bg-zinc-900 w-32 h-32 gap-4 cursor-pointer rounded-lg border-blue-600 hover:border-2">
+            <Image src="/typescript.png" width={50} height={50} alt="WebDesign"/>
+            <div>Typescript</div>
+          </div>
+          <div className="flex flex-col justify-center items-center bg-zinc-900 w-32 h-32 gap-4 cursor-pointer rounded-lg border-blue-600 hover:border-2">
+            <Image src="/figma.png" width={50} height={50} alt="WebDesign"/>
+            <div>Figma</div>
+          </div>
+          <div className="flex flex-col justify-center items-center bg-zinc-900 w-32 h-32 gap-4 cursor-pointer rounded-lg border-blue-600 hover:border-2">
+            <Image src="/vercel.png" width={50} height={50} alt="WebDesign"/>
+            <div>React Native</div>
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col justify-center items-center gap-7 mt-40">
+        <div className="text-5xl font-bold">My Skills</div>
+        <div className=" text-gray-400">My Skills are</div>
+        <div className="inline-grid grid-cols-1 gap-8">
+          <div className="flex flex-col justify-center items-center gap-4 w-80">
+            <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+              <div className="bg-blue-600 h-2.5 rounded-full w-4/5"></div>
+            </div>
+            <div>FrontEnd developement</div>
+          </div>
+          <div className="flex flex-col justify-center items-center gap-4">
+            <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+              <div className="bg-blue-600 h-2.5 rounded-full w-4/5"></div>
+            </div>
+            <div>Backend Developemnt</div>
+          </div>
+          <div className="flex flex-col justify-center items-center gap-4">
+            <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+              <div className="bg-blue-600 h-2.5 rounded-full w-4/12"></div>
+            </div>
+            <div>Mobile developement</div>
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col justify-center items-center mt-32 gap-7">
+        <div className="text-5xl font-bold">Blogs</div>
+        <div className=" text-gray-400">enjoy reading my tech-related blogs</div>
+        <div className="flex flex-row justify-center gap-8">
+        <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-start items-center bg-zinc-900 w-80 gap-4 cursor-pointer rounded-lg">
+            <Image src="/blog.png" className="rounded-t-lg" width={320} height={100} alt="WebDesign"/>
+            <div className="px-3">React 19 brings a wave of new features, transforming how developers handle state, errors, and asynchronous tasks. These updates empower developers, making their workflows smoother and applications faster.</div>
+          </div>
+        </div>
+        <div className="flex flex-row justify-center">
+          <div className="flex flex-col justify-start items-center bg-zinc-900 w-80 gap-4 cursor-pointer rounded-lg">
+            <Image src="/blog.png" className="rounded-t-lg" width={320} height={100} alt="WebDesign"/>
+            <div className="px-3">React 19 brings a wave of new features, transforming how developers handle state, errors, and asynchronous tasks. These updates empower developers, making their workflows smoother and applications faster.</div>
+          </div>
+        </div>
+        <div className="flex flex-row justify-center">
+          <div className="flex flex-col justify-start items-center bg-zinc-900 w-80 gap-4 cursor-pointer rounded-lg">
+            <Image src="/blog.png" className="rounded-t-lg" width={320} height={100} alt="WebDesign"/>
+            <div className="px-3">React 19 brings a wave of new features, transforming how developers handle state, errors, and asynchronous tasks. These updates empower developers, making their workflows smoother and applications faster.</div>
+          </div>
+        </div>
+        </div>
+      </section>
     </main>
   );
 }
